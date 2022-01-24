@@ -1,0 +1,242 @@
+:root {
+  --header-color: #212121;
+  --accent-color: #2196f3;
+  --first-title-color: #2f303a;
+  --second-title-color: #e5e5e5;
+  --footer-color: #757575;
+  --one-title-color: #ffffff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--header-color);
+  background: var(--one-title-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.btn-pointer {
+  cursor: pointer;
+}
+.foot-pointer {
+  cursor: default;
+}
+/*
+font-style: normal;*/
+
+/*--------------------------HEADER----------------------*/
+.span-logo {
+  color: #212121;
+}
+
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.91;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--footer-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--footer-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+
+/*--------------------------HERO----------------------*/
+.hero {
+  background-color: var(--first-title-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.hero-btn:hover {
+  background-color: #188ce8;
+}
+
+/*--------------------------ABAUT----------------------*/
+.about-pre-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+.about-after-title {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+
+/*--------------------------HOM----------------------*/
+.hom-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--header-color);
+}
+
+/*--------------------------MEN----------------------*/
+
+.men {
+  background-color: #f5f4fa;
+}
+.men-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+.men-pre-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+
+.men-after-title {
+  font-size: 16px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+/*--------------------------FOOTER----------------------*/
+.spani-logo {
+  color: #f5f4fa;
+}
+
+.footer {
+  background-color: var(--first-title-color);
+}
+.footer-pre-link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+
+.footer-link:hover,
+.footer-pre-link:hover {
+  color: hsl(252, 4%, 73%);
+}
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.91;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+.current {
+  color: var(--accent-color);
+}
+/*----------------------------------------------------PORTFOLIO---------------------------*/
+/*--------------------------ART----------------------*/
+.art-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+.art-btn:hover,
+.art-btn:focus {
+  background-color: var(--accent-color);
+}
+.art-btn:active {
+  color: var(--one-title-color);
+}
+.now {
+  background-color: var(--accent-color);
+}
+.art-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--header-color);
+}
+.art-after-text {
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
