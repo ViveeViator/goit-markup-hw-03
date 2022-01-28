@@ -52,9 +52,7 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
-.frame {
-  outline: 1px solid blue;
-}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -107,6 +105,9 @@ img {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
+.header-cont:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-link {
   font-weight: 500;
@@ -114,6 +115,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -140,9 +142,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--footer-color);
-
-  margin-right: 40px;
 }
+
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
@@ -152,6 +153,7 @@ img {
 .hero {
   background-color: var(--first-title-color);
   text-align: center;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -166,11 +168,6 @@ img {
   max-width: 696px;
   margin-bottom: 30px;
   margin: auto;
-}
-
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-btn {
@@ -189,6 +186,7 @@ img {
 
   min-width: 200px;
   min-height: 50px;
+  margin-top: 30px;
 }
 
 .hero-btn:hover {
@@ -196,10 +194,6 @@ img {
 }
 
 /*--------------------------ABAUT----------------------*/
-
-.abaut {
-  padding-top: 94px;
-}
 
 .about-list {
   display: flex;
@@ -218,6 +212,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
 .about-after-title {
   font-weight: 400;
@@ -228,9 +223,10 @@ img {
 }
 
 /*--------------------------HOM----------------------*/
-/*.hom {
-  padding-bottom: 438px;
-}*/
+.hom {
+  padding-top: 0px;
+}
+
 .hom-title {
   font-weight: 700;
   font-size: 36px;
@@ -259,7 +255,7 @@ img {
 .men-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.66;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
@@ -286,6 +282,7 @@ img {
 .men-list {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .team-list li:not(:last-child) {
   margin-right: 30px;
@@ -318,25 +315,26 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-list {
-  margin-top: 9px;
-}
-
 .footer-pre-link {
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
-
   color: #ffffff;
-  margin-top: 20px;
+
+  text-decoration: none;
 }
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-color);
-  margin-top: 9px;
+
+  text-decoration: none;
+  display: block;
+}
+
+.footer-list li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-link:hover,
@@ -347,13 +345,18 @@ img {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.91;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 
   color: #2196f3;
 }
 .current {
   color: var(--accent-color);
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
 }
 /*----------------------------------------------------PORTFOLIO---------------------------*/
 /*--------------------------ART----------------------*/
@@ -387,6 +390,7 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 .art-btn:hover,
 .art-btn:focus {
@@ -411,7 +415,6 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
-  margin-top: 4px;
 }
 
 .art-container {
