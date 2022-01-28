@@ -197,11 +197,13 @@ img {
 
 .about-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .about-item {
   max-width: 270px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-pre-title {
