@@ -51,7 +51,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 .frame {
   outline: 1px solid blue;
@@ -68,7 +67,17 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.now {
+  background-color: var(--accent-color);
+}
+
 /*--------------------------HEADER----------------------*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: var(--one-title-color);
+}
 
 .header-list {
   display: flex;
@@ -142,6 +151,7 @@ img {
 /*--------------------------HERO----------------------*/
 .hero {
   background-color: var(--first-title-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -153,7 +163,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 200px 0px 30px 452px;
+  max-width: 696px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-btn {
@@ -179,20 +196,31 @@ img {
 }
 
 /*--------------------------ABAUT----------------------*/
+
+.abaut {
+  padding-top: 94px;
+}
+
 .about-list {
   display: flex;
-  margin-right: 30px;
+  justify-content: space-between;
+}
+
+.about-item {
+  max-width: 270px;
 }
 
 .about-pre-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
 }
 .about-after-title {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -244,6 +272,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
 
 .men-after-title {
@@ -256,12 +285,22 @@ img {
 
 .men-list {
   display: flex;
-  margin: -15px;
+  justify-content: space-between;
+}
+.team-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .men-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.men-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*--------------------------FOOTER----------------------*/
@@ -272,7 +311,17 @@ img {
 .footer {
   background-color: var(--first-title-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.footer-bg a {
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  margin-top: 9px;
+}
+
 .footer-pre-link {
   font-size: 14px;
   line-height: 1.71;
@@ -308,8 +357,20 @@ img {
 }
 /*----------------------------------------------------PORTFOLIO---------------------------*/
 /*--------------------------ART----------------------*/
-.art-item:not(:last-child) {
-  margin-right: 52px;
+.art {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: var(--one-title-color);
+}
+
+.art-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.art-list li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .art-btn {
@@ -320,17 +381,19 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+
+  display: block;
+  margin: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
 }
 .art-btn:hover,
 .art-btn:focus {
   background-color: var(--accent-color);
-}
-.art-btn:active {
   color: var(--one-title-color);
 }
-.now {
-  background-color: var(--accent-color);
-}
+
 .art-text {
   font-weight: 700;
   font-size: 18px;
@@ -339,6 +402,7 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--header-color);
+  margin-bottom: 4px;
 }
 .art-after-text {
   font-size: 16px;
@@ -347,10 +411,9 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
+  margin-top: 4px;
 }
-.art-list {
-  display: flex;
-}
+
 .art-container {
   display: flex;
   align-items: center;
@@ -359,12 +422,19 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-right: -30px;
+  margin-top: -30px;
 }
 
+.carte-thumb {
+  width: 370px;
+}
 .carte-item {
-  flex-basis: calc(100% / 3 - 30px);
+  width: calc((100% - 90px) / 3);
   margin-left: 30px;
-  margin-right: 30px;
-  max-width: 370px;
+  margin-top: 30px;
+}
+.carte-info {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
