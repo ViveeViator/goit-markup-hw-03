@@ -283,9 +283,13 @@ img {
 
 .men-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
 }
+
+.men-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-list li:not(:last-child) {
   margin-right: 30px;
 }
